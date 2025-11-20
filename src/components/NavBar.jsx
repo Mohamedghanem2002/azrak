@@ -84,15 +84,23 @@ function NavBar() {
           )}
 
           {/* Left Section */}
-          <ul className="flex  gap-1 lg:gap-5 ">
-            <li className="text-[#202020] text-[14px] flex items-center gap-2 cursor-pointer">
+          <ul
+            className="
+    flex flex-row items-center 
+    overflow-x-auto whitespace-nowrap
+    text-[12px]
+    py-2
+    lg:gap-5 lg:text-[14px] lg:overflow-visible
+  "
+          >
+            <li className="text-[#202020] flex items-center gap-2 cursor-pointer">
               <img src={icon} alt="icon" className="w-[16px] h-[16px]" />
               العربية - رس
             </li>
-            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer">
               سياسة الإستبدال أو الاسترجاع
             </li>
-            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer">
               تواصل معنا
             </li>
           </ul>
