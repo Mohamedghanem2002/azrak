@@ -84,15 +84,7 @@ function NavBar() {
           )}
 
           {/* Left Section */}
-          <ul
-            className="
-    flex flex-row items-center 
-    overflow-x-auto whitespace-nowrap
-    text-[12px]
-    py-2
-    lg:gap-5 lg:text-[14px] lg:overflow-visible
-  "
-          >
+          <ul className="  flex flex-row items-center   overflow-x-auto whitespace-nowrap  text-[12px]  py-2  lg:gap-5 lg:text-[14px] lg:overflow-visible  ">
             <li className="text-[#202020] flex items-center gap-2 cursor-pointer">
               <img src={icon} alt="icon" className="w-[16px] h-[16px]" />
               العربية - رس

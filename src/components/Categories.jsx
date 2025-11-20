@@ -34,7 +34,7 @@ function Categories() {
         {categories.map((cat, index) => (
           <div
             key={index}
-            className="bg-[#F6F6F6] relative pt-16 md:pt-20 flex flex-col items-center p-4 rounded-md w-full max-w-[180px] mx-auto"
+            className="bg-[#F6F6F6] relative pt-16 md:pt-20 flex flex-col items-center p-4  w-full max-w-[180px] mx-auto"
           >
             <img
               src={cat.img}
