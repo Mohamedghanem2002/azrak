@@ -7,6 +7,7 @@ import slider_4 from "../assets/slider-4.png";
 import slider_5 from "../assets/slider-5.png";
 import right from "../assets/right.png";
 import left from "../assets/left.png";
+import flower from "../assets/flower.png";
 
 const data = [
   {
@@ -67,7 +68,7 @@ function BestSection() {
   const product = data[index];
 
   return (
-    <section className="bg-[#E7F0DC] py-10 px-4 md:px-16 lg:px-32 mt-12">
+    <section className="bg-[#E7F0DC] py-10 px-4 md:px-16 lg:px-32 mt-12 ">
       <div className="text-center mb-10">
         <h2 className="font-normal text-xs md:text-sm text-[#202020]">
           افضـــــل الاقســـــــام

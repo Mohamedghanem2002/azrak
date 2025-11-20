@@ -13,6 +13,7 @@ import visa from "../assets/visa.png";
 import mastercard from "../assets/master.png";
 import paypal from "../assets/paypal.png";
 import mada from "../assets/mada.png";
+import send from "../assets/send.png";
 
 function Footer() {
   return (
@@ -24,15 +25,18 @@ function Footer() {
             الاشتراك في النشرة البريدية
           </h3>
 
-          <input
-            type="text"
-            placeholder="أدخل بريدك الالكتروني"
-            className="
-              p-3 w-full border border-[#ccc]
-              rounded-md outline-none
-              text-right
-            "
-          />
+          <div className="relative w-full">
+            <input
+              type="text"
+              placeholder="أدخل بريدك الالكتروني"
+              className="  p-3 pl-12 w-full  outline-none   text-right  "
+            />
+            <img
+              src={send}
+              alt="Send"
+              className="absolute left-3 top-1/4 -translate-y-1/2 w-8 h-8 cursor-pointer"
+            />
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
             <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] rounded-md">
