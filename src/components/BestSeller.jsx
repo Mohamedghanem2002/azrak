@@ -63,29 +63,33 @@ function BestSeller() {
         استكشف الخيارات الرائجة التي تعزز جمالك وتلبي احتياجاتك الشخصية
       </p>
 
-      <div className="container-style grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-12 gap-8 ">
+      <div className="container-style grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-12 gap-6 md:gap-8">
         {products.map((product, index) => (
           <div
             key={index}
-            className="bg-white shadow-[0px_4px_20px_#0000000F] w-[185px] h-[350px] relative flex flex-col items-center "
+            className="bg-white shadow-[0px_4px_20px_#0000000F] w-full max-w-[185px] h-[350px] relative flex flex-col items-center mx-auto"
           >
-            <div className="absolute top-4 right-4 bg-[#BD1C1C] text-white text-[12px] px-3 py-1">
+            <div className="absolute top-2 right-2 bg-[#BD1C1C] text-white text-[12px] px-3 py-1 rounded-sm">
               -{product.discount}%
             </div>
 
-            <img src={bestSeller} alt={product.name} className="w-[150px]" />
+            <img
+              src={bestSeller}
+              alt={product.name}
+              className="w-[120px] md:w-[150px] mt-4"
+            />
 
-            <div className="flex gap-1">
+            <div className="flex gap-1 mt-2">
               {[...Array(5)].map((_, i) => (
-                <img key={i} src={star} alt="star" />
+                <img key={i} src={star} alt="star" className="w-[14px]" />
               ))}
             </div>
 
-            <h4 className="text-[#597445] font-medium text-[20px] leading-[30px] text-center mt-2">
+            <h4 className="text-[#597445] font-medium text-[18px] md:text-[20px] leading-[28px] text-center mt-2">
               {product.category}
             </h4>
 
-            <h3 className="text-[#1E2519] font-normal text-[20px] leading-[30px] text-center">
+            <h3 className="text-[#1E2519] font-normal text-[18px] md:text-[20px] leading-[28px] text-center">
               {product.name}
             </h3>
 

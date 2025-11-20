@@ -77,19 +77,21 @@ function BestSection() {
           استكشف مجموعة متنوعة من الأقسام المتاحة
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between container-style w-full">
+
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between container-style w-full gap-10 lg:gap-0">
         <div className="text-right w-full lg:w-auto hidden lg:block mb-6 lg:mb-0">
           <ul className="flex flex-col gap-6 text-lg">
             {data.map((item, i) => (
               <li
                 key={i}
                 onClick={() => goTo(i)}
-                className={`cursor-pointer transition whitespace-nowrap text-[22px] md:text-[28px] lg:text-[32px] p-2 
-          ${
-            index === i
-              ? "text-[#202020] font-bold border-b-2 border-[#202020]"
-              : "text-[#20202057]"
-          }`}
+                className={`cursor-pointer transition whitespace-nowrap 
+              text-[22px] md:text-[28px] lg:text-[32px] p-2
+              ${
+                index === i
+                  ? "text-[#202020] font-bold border-b-2 border-[#202020]"
+                  : "text-[#20202057]"
+              }`}
               >
                 {item.category}
               </li>
@@ -97,18 +99,19 @@ function BestSection() {
           </ul>
         </div>
 
-        <div className=" flex items-center justify-center w-full lg:w-auto">
+        <div className="flex items-center justify-center w-full lg:w-auto gap-3">
           <img
             src={right}
             alt="next"
             onClick={next}
-            className="cursor-pointer w-8 h-8 md:w-10 md:h-10  right-0 top-1/2 -translate-y-1/2"
+            className="cursor-pointer w-7 h-7 md:w-9 md:h-9"
           />
 
-          <div className="flex flex-col items-center mx-4">
+          <div className="flex flex-col items-center mx-2">
             <div
-              className="bg-white shadow-md w-[250px] md:w-[300px] lg:w-[330px] 
-                      h-[350px] md:h-[410px] lg:h-[440px] overflow-hidden"
+              className="bg-white shadow-md 
+          w-[220px] md:w-[260px] lg:w-[320px] 
+          h-[320px] md:h-[380px] lg:h-[430px] overflow-hidden rounded-md"
             >
               <img
                 src={product.image}
@@ -120,7 +123,8 @@ function BestSection() {
             <p className="text-[#597445] mt-4 font-normal text-[16px] md:text-[18px] text-center">
               {product.color}
             </p>
-            <p className="font-medium text-[18px] md:text-[20px] text-[#1E2519] mt-2 text-center">
+
+            <p className="font-medium text-[17px] md:text-[20px] text-[#1E2519] mt-2 text-center">
               {product.title}
             </p>
 
@@ -138,7 +142,7 @@ function BestSection() {
             src={left}
             alt="prev"
             onClick={prev}
-            className="cursor-pointer w-8 h-8 md:w-10 md:h-10  left-0 top-1/2 -translate-y-1/2"
+            className="cursor-pointer w-7 h-7 md:w-9 md:h-9"
           />
         </div>
       </div>
