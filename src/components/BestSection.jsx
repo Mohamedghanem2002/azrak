@@ -109,11 +109,7 @@ function BestSection() {
           />
 
           <div className="flex flex-col items-center mx-2">
-            <div
-              className="bg-white shadow-md 
-          w-[220px] md:w-[260px] lg:w-[320px] 
-          h-[320px] md:h-[380px] lg:h-[430px] overflow-hidden rounded-md"
-            >
+            <div className="bg-white shadow-md   w-[220px] md:w-[260px] lg:w-[320px]   h-[320px] md:h-[380px] lg:h-[430px] overflow-hidden ">
               <img
                 src={product.image}
                 alt=""

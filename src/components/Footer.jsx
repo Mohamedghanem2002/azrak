@@ -39,7 +39,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] rounded-md">
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] ">
               <img src={phone} alt="" />
               <div>
                 <p className="text-[18px]">اتصل بنا</p>
@@ -47,7 +47,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] rounded-md">
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] ">
               <img src={message} alt="" />
               <div>
                 <p className="text-[18px]">راسلنا</p>
