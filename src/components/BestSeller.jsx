@@ -63,7 +63,7 @@ function BestSeller() {
         استكشف الخيارات الرائجة التي تعزز جمالك وتلبي احتياجاتك الشخصية
       </p>
 
-      <div className="container-style grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-12 gap-4 ">
+      <div className="container-style grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-12 gap-8 ">
         {products.map((product, index) => (
           <div
             key={index}

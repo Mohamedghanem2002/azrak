@@ -61,7 +61,7 @@ function NavBar() {
 
           {/* Mobile Dropdown Menu */}
           {openMenu && (
-            <div className="md:hidden absolute top-60 right-0  w-full bg-white shadow-md rounded-xl mt-2 p-4 z-50">
+            <div className="lg:hidden absolute top-60 right-0  w-full bg-white shadow-md rounded-xl mt-2 p-4 z-50">
               <ul className="flex flex-col gap-4 text-[16px] text-[#202020]">
                 <li className="cursor-pointer">جميع الاقسام</li>
                 <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
