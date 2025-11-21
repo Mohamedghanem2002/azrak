@@ -38,22 +38,22 @@ function NavBar() {
             />
 
             <ul className="hidden lg:flex gap-5 ">
-              <li className="text-[#202020] text-[14px] cursor-pointer">
+              <li className="text-[#202020] text-[14px] cursor-pointer hover:text-colorText">
                 جميع الاقسام
               </li>
-              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer  hover:text-colorText">
                 المكياج
               </li>
-              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer  hover:text-colorText">
                 العناية
               </li>
-              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer  hover:text-colorText">
                 العطور
               </li>
-              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer  hover:text-colorText">
                 تخفيضات
               </li>
-              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer">
+              <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] text-[14px] cursor-pointer  hover:text-colorText">
                 الماركات
               </li>
             </ul>
@@ -63,20 +63,22 @@ function NavBar() {
           {openMenu && (
             <div className="lg:hidden absolute top-60 right-0  w-full bg-white shadow-md rounded-xl mt-[-32px]  p-4 z-50">
               <ul className="flex flex-col gap-4 text-[16px] text-[#202020]">
-                <li className="cursor-pointer">جميع الاقسام</li>
-                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
+                <li className="cursor-pointe  hover:text-colorText">
+                  جميع الاقسام
+                </li>
+                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer  hover:text-colorText">
                   المكياج
                 </li>
-                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
+                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer  hover:text-colorText">
                   العناية
                 </li>
-                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
+                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer  hover:text-colorText">
                   العطور
                 </li>
-                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
+                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer  hover:text-colorText">
                   تخفيضات
                 </li>
-                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer">
+                <li className="border-t border-[#CDCDCD] pt-2 cursor-pointer  hover:text-colorText">
                   الماركات
                 </li>
               </ul>
@@ -85,14 +87,14 @@ function NavBar() {
 
           {/* Left Section */}
           <ul className="  flex flex-row items-center   overflow-x-auto whitespace-nowrap  text-[12px]  py-2  lg:gap-5 lg:text-[14px] lg:overflow-visible  ">
-            <li className="text-[#202020] flex items-center gap-2 cursor-pointer">
+            <li className="text-[#202020] flex items-center gap-2 cursor-pointer  hover:text-colorText">
               <img src={icon} alt="icon" className="w-[16px] h-[16px]" />
               العربية - رس
             </li>
-            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer">
+            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer  hover:text-colorText">
               سياسة الإستبدال أو الاسترجاع
             </li>
-            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer">
+            <li className="border-r-2 border-[#CDCDCD] px-2 text-[#202020] cursor-pointer  hover:text-colorText">
               تواصل معنا
             </li>
           </ul>

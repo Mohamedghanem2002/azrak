@@ -21,12 +21,12 @@ function Footer() {
     <footer className="bg-[#F6F6F6] mt-12 ">
       <div className="container-style">
         {/* --- TOP SECTION --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 border-b-2 border-[#00000030]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 border-b-2 border-[#00000030] items-center">
           <h3 className="font-medium text-2xl text-[#222222] text-center md:text-right">
             الاشتراك في النشرة البريدية
           </h3>
 
-          <div className="relative w-full">
+          <div className="relative w-full ">
             <input
               type="text"
               placeholder="أدخل بريدك الالكتروني"
@@ -35,7 +35,7 @@ function Footer() {
             <img
               src={send}
               alt="Send"
-              className="absolute left-3 top-1/4 -translate-y-1/2 w-8 h-8 cursor-pointer"
+              className="absolute left-3 top-[22px] -translate-y-1/2 w-8 h-8 cursor-pointer"
             />
           </div>
 
@@ -88,7 +88,7 @@ function Footer() {
                 (item, i) => (
                   <li
                     key={i}
-                    className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
+                    className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-colorText transition-colors"
                   >
                     {item}
                   </li>
@@ -111,7 +111,7 @@ function Footer() {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
+                  className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-colorText"
                 >
                   {item}
                 </li>
@@ -130,7 +130,7 @@ function Footer() {
                   (num, i) => (
                     <li
                       key={i}
-                      className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
+                      className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-colorText"
                     >
                       {num}
                     </li>
