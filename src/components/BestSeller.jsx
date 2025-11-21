@@ -51,15 +51,15 @@ const products = [
 function BestSeller() {
   return (
     <div className="mt-12 flex flex-col items-center">
-      <h2 className="text-center font-normal text-[12px] md:text-[14px] leading-[16px] md:leading-[18px] text-[#597445]">
+      <h2 className="  text-center font-normal   text-[12px] leading-[16px]   sm:text-[14px] sm:leading-[18px]  md:text-[16px] md:leading-[20px] text-[#597445]">
         الأكثر مبيعــــــــــــــــــا
       </h2>
 
-      <p className="text-[#222222] font-bold text-[20px] md:text-[28px] leading-[32px] md:leading-[48px] tracking-[0] border-b-2 border-[#597445] inline-block">
+      <p className=" text-[#222222] font-bold  text-[20px] leading-[30px] sm:text-[24px] sm:leading-[36px] md:text-[28px] md:leading-[48px] tracking-0 border-b-2 border-[#597445] inline-block">
         سر الجمال الذي يبحث عنه الجميع
       </p>
 
-      <p className="font-scheherazade font-normal text-[14px] md:text-[16px] leading-[20px] md:leading-[22px] tracking-[0] text-center text-[#202020CC] mt-6">
+      <p className=" font-scheherazade font-normal  text-[12px] leading-[18px] sm:text-[14px] sm:leading-[20px]  md:text-[16px] md:leading-[22px]  text-center text-[#202020CC] mt-6">
         استكشف الخيارات الرائجة التي تعزز جمالك وتلبي احتياجاتك الشخصية
       </p>
 
