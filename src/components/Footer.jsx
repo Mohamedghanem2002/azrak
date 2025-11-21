@@ -14,10 +14,11 @@ import mastercard from "../assets/master.png";
 import paypal from "../assets/paypal.png";
 import mada from "../assets/mada.png";
 import send from "../assets/send.png";
+import drops from "../assets/drops.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#F6F6F6] mt-12">
+    <footer className="bg-[#F6F6F6] mt-12 ">
       <div className="container-style">
         {/* --- TOP SECTION --- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 border-b-2 border-[#00000030]">
@@ -87,7 +88,7 @@ function Footer() {
                 (item, i) => (
                   <li
                     key={i}
-                    className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer"
+                    className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
                   >
                     {item}
                   </li>
@@ -110,7 +111,7 @@ function Footer() {
               ].map((item, i) => (
                 <li
                   key={i}
-                  className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer"
+                  className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
                 >
                   {item}
                 </li>
@@ -129,7 +130,7 @@ function Footer() {
                   (num, i) => (
                     <li
                       key={i}
-                      className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer"
+                      className="text-[#202020E5] font-normal text-lg mt-4 cursor-pointer hover:text-darkGreen"
                     >
                       {num}
                     </li>
