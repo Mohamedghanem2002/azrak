@@ -8,6 +8,8 @@ import slider_5 from "../assets/slider-5.png";
 import right from "../assets/right.png";
 import left from "../assets/left.png";
 import flower from "../assets/flower.png";
+import circle_r from "../assets/circle-r.png";
+import circle_l from "../assets/circle-l.png";
 
 const data = [
   {
@@ -18,6 +20,8 @@ const data = [
     disPrice: "٩٥ ج.م",
     image: slider_1,
     category: "ماسكــــــــــــــــارا",
+    disR: " مضادة للمياه",
+    disL: "   سواد فحمي",
   },
   {
     id: 2,
@@ -27,6 +31,9 @@ const data = [
     disPrice: "٩٥ ج.م",
     image: slider_2,
     category: "كريم أساس",
+
+    disR: "  تغطية عالية",
+    disL: "    دائم وطويل الأمد",
   },
   {
     id: 3,
@@ -36,6 +43,9 @@ const data = [
     disPrice: "٩٥ ج.م",
     image: slider_3,
     category: "حمرة شفاه",
+
+    disR: "  ثبات طويل",
+    disL: "    سهولة التطبيق",
   },
   {
     id: 4,
@@ -45,6 +55,9 @@ const data = [
     disPrice: "٩٥ ج.م",
     image: slider_4,
     category: "حمرة خدود",
+
+    disR: "  ثبات طويل",
+    disL: " سهولة التطبيق   ",
   },
   {
     id: 5,
@@ -54,6 +67,9 @@ const data = [
     disPrice: "٩٥ ج.م",
     image: slider_5,
     category: "أيشادو",
+
+    disR: "  مقاوم للمياه",
+    disL: "    ثبات 24/7",
   },
 ];
 
@@ -100,13 +116,21 @@ function BestSection() {
           </ul>
         </div>
 
-        <div className="flex items-center justify-center w-full lg:w-auto gap-3">
+        <div className="relative flex items-center justify-center w-full lg:w-auto gap-3">
           <img
             src={right}
             alt="next"
             onClick={next}
             className="cursor-pointer w-7 h-7 md:w-9 md:h-9"
           />
+          <img
+            src={circle_r}
+            alt=""
+            className="absolute top-20 right-[-20px] md:right-[-70px]  w-[100px] md:w-[150px] lg:w-[200px]"
+          />
+          <p className="absolute top-[55px] right-[-10px] md:right-[-60px]  font-normal text-[15.66px]  md:text-[29px] text-[#000000] ">
+            {product.disR}
+          </p>
 
           <div className="flex flex-col items-center mx-2">
             <div className="bg-white shadow-md   w-[220px] md:w-[260px] lg:w-[320px]   h-[320px] md:h-[380px] lg:h-[430px] overflow-hidden ">
@@ -141,6 +165,14 @@ function BestSection() {
             onClick={prev}
             className="cursor-pointer w-7 h-7 md:w-9 md:h-9"
           />
+          <img
+            src={circle_l}
+            alt=""
+            className="absolute top-[280px] md:top-[340px] left-[-20px] md:left-[-70px]  w-[100px] md:w-[150px] lg:w-[200px]"
+          />
+          <p className="absolute top-[260px] md:top-[310px] left-[-10px] md:left-[-70px]  font-normal text-[15.66px]  md:text-[29px] text-[#000000] ">
+            {product.disL}
+          </p>
         </div>
       </div>
     </section>
