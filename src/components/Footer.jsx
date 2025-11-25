@@ -40,7 +40,7 @@ function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0">
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0 transition duration-300 hover:scale-105 cursor-pointer">
               <img src={phone} alt="" className="w-[40px] h-[40px]" />
               <div className="min-w-0 break-words">
                 <p className="text-[18px]">اتصل بنا</p>
@@ -48,7 +48,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0 ">
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0 transition duration-300 hover:scale-105 cursor-pointer">
               <img src={message} alt="" className="w-[40px] h-[40px]" />
               <div className="min-w-0 break-words">
                 <p className="text-[18px]">راسلنا</p>
