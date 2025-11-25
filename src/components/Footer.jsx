@@ -41,7 +41,7 @@ function Footer() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
             <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0">
-              <img src={phone} alt="" className="" />
+              <img src={phone} alt="" className="w-[40px] h-[40px]" />
               <div className="min-w-0 break-words">
                 <p className="text-[18px]">اتصل بنا</p>
                 <p className="break-words">009612345678932</p>
@@ -49,7 +49,7 @@ function Footer() {
             </div>
 
             <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0 ">
-              <img src={message} alt="" className="" />
+              <img src={message} alt="" className="w-[40px] h-[40px]" />
               <div className="min-w-0 break-words">
                 <p className="text-[18px]">راسلنا</p>
                 <p className="break-words">Allura@gmail.com</p>
