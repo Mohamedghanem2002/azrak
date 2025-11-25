@@ -21,7 +21,7 @@ function Footer() {
     <footer className="bg-[#F6F6F6] mt-12 ">
       <div className="container-style">
         {/* --- TOP SECTION --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 border-b-2 border-[#00000030] items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pb-8 border-b-2 border-[#00000030] items-center">
           <h3 className="font-medium text-2xl text-[#222222] text-center md:text-right">
             الاشتراك في النشرة البريدية
           </h3>
@@ -40,19 +40,19 @@ function Footer() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] ">
-              <img src={phone} alt="" />
-              <div>
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0">
+              <img src={phone} alt="" className="" />
+              <div className="min-w-0 break-words">
                 <p className="text-[18px]">اتصل بنا</p>
-                <p>009612345678932</p>
+                <p className="break-words">009612345678932</p>
               </div>
             </div>
 
-            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] ">
-              <img src={message} alt="" />
-              <div>
+            <div className="flex gap-4 border-2 border-[#20202012] p-4 bg-[#20202012] max-w-full min-w-0 ">
+              <img src={message} alt="" className="" />
+              <div className="min-w-0 break-words">
                 <p className="text-[18px]">راسلنا</p>
-                <p>Allura@gmail.com</p>
+                <p className="break-words">Allura@gmail.com</p>
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@ function Footer() {
           </div>
 
           {/* Column 4 */}
-          <div className="flex justify-between md:border-r-2 border-[#00000030] py-4 px-8 gap-4 text-right">
+          <div className="flex justify-between items-center md:border-r-2 border-[#00000030] py-4 px-8 gap-4 text-right">
             <div>
               <h3 className="font-scheherazade font-semibold text-xl text-[#202020]">
                 تواصل معنا
@@ -138,11 +138,8 @@ function Footer() {
                 )}
               </ul>
             </div>
-            <img
-              src={logoFooter}
-              alt=""
-              className="w-[80px] h-auto mx-auto md:mx-0 "
-            />
+
+            <img src={logoFooter} className="w-[150px] h-auto self-center" />
           </div>
         </div>
 
